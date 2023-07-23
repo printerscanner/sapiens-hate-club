@@ -11,45 +11,93 @@
 	<meta property="og:type" content="article">
 	<meta property="og:url" content="https://sapienshate.club/">
 	<meta property="og:image" content="https://sapienshate.club/assets/image.png"/>
-	<link rel="stylesheet" href="https://printerscanner.github.io/slightly-better-css/slightly-better.css">
 	<title>Sapiens Hate Club</title>
 </head>
+<style>
+
+	body {
+		margin: 0;
+		font-family: monospace;
+		font-size: 14px;
+	}
+
+	h1, h2, h3 {
+		font-family: serif;
+	}
+
+	h1 {
+		font-size: 70px;
+	}
+
+	.section {
+		max-width: 100%;
+    	justify-content: space-around;
+		display: flex;
+		min-height: 100vh;
+		padding: 0;
+	}
+
+	.container {
+		flex: 50%;
+    	padding: 20px;
+	}
+
+	.container--right {
+		background: radial-gradient(#622c2c, #393939);
+		display: flex;
+    	align-items: center;
+    	justify-content: center;
+	}
+
+	#my-element {
+		padding: 0;
+		margin: 0;
+	}
+
+	blockquote {
+		margin-bottom: 40px;
+	}
+
+	@media only screen and (max-width: 800px) {
+		.section {
+			flex-direction: column
+		};
+		.container {
+			width: auto;
+		}
+	}
+</style>
 <body>
 
-	<main>
-		<header>
-			<span>You're cordially invited to join</span>
-			<h1>The Sapiens Hate Club</h1>
-		</header>
-		<figure>
-			<img src="assets/image.png" alt="sapiens pic crossed out" >
-			<figcaption>Fig 1. Sapiens, crossed out.</figcaption>
-		</figure>
+<section class="section">
+	<div class="container">
+		<span>You're cordially invited to join</span>
+		<h1 id="my-element">SAPIENS HATE CLUB</h1>
+		<div style="margin: 50px 0;">
+			<h2>Key Points</h2>
+			<p>Harari has no idea what he's talking about.</p>
+			<p>I'm sick of seeing this book on bookshelves. It's been 10 YEARS.</p>
+		</div>
 
-		<h1>Key Points</h1>
-			<ul>
-				<li>Harari has no idea what he's talking about.</li>
-				<li>I'm sick of seeing this book on bookshelves. It's been 10 YEARS.</li>
-			</ul>
-		<hr>
-		<h1>Scholarly reviews of Sapiens</h1>
-		<blockquote>
-			<p>"The book is fundamentally unserious and undeserving of the wide acclaim and attention it has been receiving"
-			</p>
-			<cite>John Sexton</cite>
-		</blockquote>
+			<h2>Scholarly reviews of Sapiens</h2>
 			<blockquote>
-			<p>"...whenever his facts are broadly correct they are not new, and whenever he tries to strike out on his own he often gets things wrong, sometimes seriously"</p>
-			<cite>Christopher Robert Hallpike</cite>
-		</blockquote>
+				<p>"The book is fundamentally unserious and undeserving of the wide acclaim and attention it has been receiving"
+				</p>
+				<cite>– John Sexton</cite>
+			</blockquote>
 			<blockquote>
-			<p>"This book sucks."</p>
-			<cite>Me</cite>
-		</blockquote>
-		<hr>
-		<footer>
+				<p>"...whenever his facts are broadly correct they are not new, and whenever he tries to strike out on his own he often gets things wrong, sometimes seriously"</p>
+				<cite>– Christopher Robert Hallpike</cite>
+			</blockquote>
+				<blockquote>
+				<p>"This book sucks."</p>
+				<cite>– Me</cite>
+			</blockquote>
 			<i>I am not open to any discussion about this.</i>
-		</footer>
-	</main>
+		</div>
+	<div class="container container--right">
+		<img class="img" src="assets/image.png" alt="sapiens pic crossed out" >
+	</div>
+</section>
 </body>
 </html>
