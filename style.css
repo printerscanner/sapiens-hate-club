@@ -1,0 +1,52 @@
+/* Use the font in your styles */
+body {
+    font-family: "Impact", "Charcoal", sans-serif;
+    background-color: #ff0000;
+    color: black;
+    margin: 50px;
+    font-size: 30px;
+}
+
+h1 {
+    margin: 0;
+}
+
+img {
+    mix-blend-mode: hue;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;   
+    margin-bottom: 100px;
+}
+
+.header h1 {
+    font-size: 150px;
+}
+
+
+.header span {
+    font-size: 30px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+blockquote {
+    margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 800px) {
+    .section {
+        flex-direction: column
+    };
+    .container {
+        width: auto;
+    }
+}
