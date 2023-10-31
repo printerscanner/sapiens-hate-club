@@ -1,52 +1,39 @@
+@font-face {
+	font-family: 'Neue Montreal';
+	src: url("assets/fonts/PPNeueMontreal-Regular.woff") format("woff");
+}
+
+@font-face {
+	font-family: 'Neue Montreal';
+	src: url("assets/fonts/PPNeueMontreal-Bold.woff") format("woff");
+	font-weight: 700;
+}
+
+
 /* Use the font in your styles */
 body {
-    font-family: "Impact", "Charcoal", sans-serif;
-    background-color: #62633c;
+    font-family: "Neue Montreal", sans-serif;
     color: black;
-    margin: 50px;
-    font-size: 30px;
+    margin: 15px;
+    font-size: 40px
 }
 
 h1 {
     margin: 0;
+    color: red;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 140px;
+}
+s {
+    text-decoration: line-through;
 }
 
-img {
-    mix-blend-mode: hue;
-}
+h2, h4, b { color: red;}
 
-
-.header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    justify-content: space-between;   
-    margin-bottom: 100px;
-}
-
-.header h1 {
-    font-size: 150px;
-}
-
-
-.header span {
-    font-size: 30px;
-}
-
-.container {
-    max-width: 1200px;
-    margin: auto;
-}
-
-blockquote {
-    margin-bottom: 40px;
-}
 
 @media only screen and (max-width: 800px) {
-    .section {
-        flex-direction: column
-    };
-    .container {
-        width: auto;
+    h1 {
+        font-size: 70px;
     }
 }
